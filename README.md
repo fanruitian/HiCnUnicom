@@ -8,6 +8,8 @@
 进入仓库后点击 `Settings`，右侧栏点击 `Secrets`，点击 `New secret`。分别添加 `HAOMA`、`MM` 和 `APPID` 的值，对应为你的 `要签到的手机号码`、`手机号码的服务密码` 和 `联通app抓包的appd值`。
 其中 `APPID` 为联通app抓包的appid值，最好自己抓包，不会抓包就默认填 `247b001385de5cc6ce11731ba1b15835313d489d604e58280e455a6c91e5058651acfb0f0b77029c2372659c319e02645b54c0acc367e692ab24a546b83c302d`  <不保证这个appid能用，所以最好自己抓包>
 
+
+
 有多个手机号码则可以自己修改仓库文件 `.github/workflows/签到.yml` 中的每个号码的
 `${{ secrets.HAOMA }}`为`${{ secrets.HAOMA2 }}`、`${{ secrets.HAOMA3 }}`等等，密码同理为`${{ secrets.MM }}`、`${{ secrets.MM2 }}`
 同时也需要添加Secrets变量`HAOMA2`、`HAOMA3`、`MM2`等等。
