@@ -47,7 +47,7 @@ jobs:
           env:
            haoma: ${{ secrets.HAOMA2 }}
            mm: ${{ secrets.MM2 }}
-           appid: ${{ secrets.APPID2 }}
+           appid: ${{ secrets.APPID }}
           run: |
            bash CnUnicom.sh ${haoma} ${mm} ${appid}
 
